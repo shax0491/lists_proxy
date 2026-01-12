@@ -49,7 +49,8 @@ payload:
   - IP-CIDR,99.181.64.0/18
   - IP-CIDR6,2402:2a80::/32
   - PROCESS-NAME,tv.twitch.android.app
-  # -------- twitch -------
-
+  # -------- aeza -------
+  - DOMAIN-SUFFIX,aeza.net
+  # -------- aeza -------
 
 
