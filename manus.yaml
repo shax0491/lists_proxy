@@ -1,1 +1,20 @@
+payload:
+  # Main site + docs + builder
+  - DOMAIN-SUFFIX,manus.im
 
+  # API / platform
+  - DOMAIN-SUFFIX,manus.ai
+  - DOMAIN,api.manus.ai
+
+  # API docs host
+  - DOMAIN,open.manus.im
+
+  # Help center
+  - DOMAIN,help.manus.im
+
+  # На всякий случай: поддомены
+  - DOMAIN-SUFFIX,open.manus.im
+  - DOMAIN-SUFFIX,help.manus.im
+
+  # Если у тебя Manus где-то встречается как поддомен/зеркало
+  - DOMAIN-KEYWORD,manus
