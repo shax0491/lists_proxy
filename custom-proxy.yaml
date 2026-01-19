@@ -52,7 +52,9 @@ payload:
   # -------- aeza -------
   - DOMAIN-SUFFIX,aeza.net
   # -------- other -------
+  - DOMAIN-SUFFIX,trustmaster.com
   # -------- other -------
+
 
 
 
