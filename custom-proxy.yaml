@@ -83,8 +83,9 @@ payload:
   - DOMAIN-SUFFIX,torrindex.net
   - DOMAIN-SUFFIX,wstracker.online
   - DOMAIN-SUFFIX,ysagin.top
-  # -------- torrent -------
-
+  # -------- forex -------
+  - DOMAIN-SUFFIX,roboforex.com
+  # -------- forex -------
 
 
 
