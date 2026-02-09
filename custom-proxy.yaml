@@ -86,8 +86,9 @@ payload:
   # -------- forex -------
   - DOMAIN-SUFFIX,roboforex.com
   - DOMAIN-SUFFIX,roboforex.org
-  # -------- forex -------
-
+  # -------- other -------
+  - DOMAIN-SUFFIX,pine64.com
+  # -------- other -------
 
 
 
