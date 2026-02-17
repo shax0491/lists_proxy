@@ -90,7 +90,9 @@ payload:
   - DOMAIN-SUFFIX,pine64.com
   # -------- ii -------
   - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,x.ai
   # -------- ii -------
+
 
 
 
