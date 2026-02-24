@@ -103,6 +103,13 @@ payload:
   - DOMAIN-SUFFIX,mega.nz
   - DOMAIN-SUFFIX,fast.com
 
+  # Windows Notification Service & Microsoft
+  - DOMAIN-SUFFIX,wns.windows.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,msftncsi.com
+
 #--------------- 7. IPv4 Kino.pub (Все блоки) ---------------
   - IP-CIDR,5.188.94.0/24
   - IP-CIDR,5.188.188.0/22
@@ -138,4 +145,5 @@ payload:
   - IP-CIDR,192.16.64.0/21
   - IP-CIDR,192.108.239.0/24
   - IP-CIDR,199.9.248.0/21
+
 
