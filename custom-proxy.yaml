@@ -29,7 +29,7 @@ payload:
   - DOMAIN-SUFFIX,vscode.dev
   - DOMAIN-SUFFIX,bitbucket.org
   - DOMAIN-SUFFIX,docker.com
-
+  - DOMAIN-SUFFIX,cloudflare.com
 #--------------- 2. Стриминг и Кино (Twitch & Kino.pub) ---------------
   - DOMAIN-SUFFIX,ext-twitch.tv
   - DOMAIN-SUFFIX,jtvnw.net
@@ -145,5 +145,6 @@ payload:
   - IP-CIDR,192.16.64.0/21
   - IP-CIDR,192.108.239.0/24
   - IP-CIDR,199.9.248.0/21
+
 
 
