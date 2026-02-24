@@ -1,6 +1,109 @@
 payload:
-#--------------- Kino.pub (IP блоки) ---------------
-# Внимание: блоки /8 и /10 очень широкие, могут захватывать лишнее
+#--------------- 1. Софт, Железо и ИТ (OneXPlayer / PC) ---------------
+  - DOMAIN-SUFFIX,4pda.to
+  - DOMAIN-SUFFIX,habr.com
+  - DOMAIN-SUFFIX,intel.com
+  - DOMAIN-SUFFIX,amd.com
+  - DOMAIN-SUFFIX,nvidia.com
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,download.microsoft.com
+  - DOMAIN-SUFFIX,update.microsoft.com
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,go.microsoft.com
+  - DOMAIN-SUFFIX,lenovo.com
+  - DOMAIN-SUFFIX,dell.com
+  - DOMAIN-SUFFIX,dellcdn.com
+  - DOMAIN-SUFFIX,hp.com
+  - DOMAIN-SUFFIX,asus.com
+  - DOMAIN-SUFFIX,adobe.com
+  - DOMAIN-SUFFIX,adobe.io
+  - DOMAIN-SUFFIX,autodesk.com
+  - DOMAIN-SUFFIX,autocad.com
+  - DOMAIN-SUFFIX,vmware.com
+  - DOMAIN-SUFFIX,parsec.app
+  - DOMAIN-SUFFIX,teamviewer.com
+  - DOMAIN-SUFFIX,anydesk.com
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,vscode.dev
+  - DOMAIN-SUFFIX,bitbucket.org
+  - DOMAIN-SUFFIX,docker.com
+
+#--------------- 2. Стриминг и Кино (Twitch & Kino.pub) ---------------
+  - DOMAIN-SUFFIX,ext-twitch.tv
+  - DOMAIN-SUFFIX,jtvnw.net
+  - DOMAIN-SUFFIX,live-video.net
+  - DOMAIN-SUFFIX,ttvnw.net
+  - DOMAIN-SUFFIX,twitch.tv
+  - DOMAIN-SUFFIX,twitchcdn.net
+  - DOMAIN-SUFFIX,twitchsvc.net
+  - DOMAIN-KEYWORD,ttvnw
+  - DOMAIN-SUFFIX,lostfilm.tv
+  - DOMAIN-SUFFIX,themoviedb.org
+  - DOMAIN-SUFFIX,tmdb.org
+  - DOMAIN-SUFFIX,netflix.com
+  - DOMAIN-SUFFIX,netflix.net
+  - DOMAIN-SUFFIX,nflxext.com
+  - DOMAIN-SUFFIX,primevideo.com
+  - DOMAIN-SUFFIX,crunchyroll.com
+  - DOMAIN-SUFFIX,deezer.com
+  - DOMAIN-SUFFIX,megogo.net
+
+#--------------- 3. Торренты и P2P ---------------
+  - DOMAIN-SUFFIX,rutracker.org
+  - DOMAIN-SUFFIX,rutracker.cc
+  - DOMAIN-SUFFIX,rutracker.ru
+  - DOMAIN-SUFFIX,rutrk.org
+  - DOMAIN-SUFFIX,nnm-club.ws
+  - DOMAIN-SUFFIX,nnmclub.ch
+  - DOMAIN-SUFFIX,booktracker.work
+  - DOMAIN-SUFFIX,freetp.org
+  - DOMAIN-SUFFIX,newstudio.tv
+  - DOMAIN-SUFFIX,t-ru.org
+  - DOMAIN-SUFFIX,torrindex.net
+  - DOMAIN-SUFFIX,stealth.si
+
+#--------------- 4. Искусственный Интеллект и Notion ---------------
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-SUFFIX,notion.site
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,oaistatic.com
+  - DOMAIN-SUFFIX,oaiusercontent.com
+
+#--------------- 5. Соцсети и Общение ---------------
+  - DOMAIN-SUFFIX,discord.com
+  - DOMAIN-SUFFIX,discord.gg
+  - DOMAIN-SUFFIX,discordapp.com
+  - DOMAIN-SUFFIX,discordapp.net
+  - DOMAIN-SUFFIX,discord.media
+  - DOMAIN-SUFFIX,x.com
+  - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,viber.com
+  - DOMAIN-SUFFIX,signal.org
+  - DOMAIN-SUFFIX,messenger.com
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,facebook.net
+  - DOMAIN-SUFFIX,fbcdn.net
+
+#--------------- 6. Полезное (Canva, Pinterest и т.д.) ---------------
+  - DOMAIN-SUFFIX,canva.com
+  - DOMAIN-SUFFIX,pinterest.com
+  - DOMAIN-SUFFIX,strava.com
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,redd.it
+  - DOMAIN-SUFFIX,unsplash.com
+  - DOMAIN-SUFFIX,mega.io
+  - DOMAIN-SUFFIX,mega.nz
+  - DOMAIN-SUFFIX,fast.com
+
+#--------------- 7. IPv4 Kino.pub (Все блоки) ---------------
   - IP-CIDR,5.188.94.0/24
   - IP-CIDR,5.188.188.0/22
   - IP-CIDR,8.0.0.0/13
@@ -24,16 +127,7 @@ payload:
   - IP-CIDR,188.114.96.0/22
   - IP-CIDR,213.183.46.0/24
 
-#--------------- Twitch (Стриминг) ---------------
-  - DOMAIN-SUFFIX,ext-twitch.tv
-  - DOMAIN-SUFFIX,jtvnw.net
-  - DOMAIN-SUFFIX,live-video.net
-  - DOMAIN-SUFFIX,ttvnw.net
-  - DOMAIN-SUFFIX,twitch.tv
-  - DOMAIN-SUFFIX,twitch-ext.rootonline.de
-  - DOMAIN-SUFFIX,twitchcdn.net
-  - DOMAIN-SUFFIX,twitchsvc.net
-  - DOMAIN-KEYWORD,ttvnw
+#--------------- 8. IPv4 Twitch ---------------
   - IP-CIDR,23.160.0.0/24
   - IP-CIDR,45.113.128.0/22
   - IP-CIDR,52.223.192.0/20
@@ -45,36 +139,3 @@ payload:
   - IP-CIDR,192.16.64.0/21
   - IP-CIDR,192.108.239.0/24
   - IP-CIDR,199.9.248.0/21
-  - IP-CIDR6,2402:2a80::/32
-  - PROCESS-NAME,tv.twitch.android.app
-
-#--------------- AI / ИИ (Grok & xAI) ---------------
-  - DOMAIN-SUFFIX,grok.com
-  - DOMAIN-SUFFIX,x.ai
-
-#--------------- Хостинг и Технологии (Aeza, Pine64) ---------------
-  - DOMAIN-SUFFIX,aeza.net
-  - DOMAIN-SUFFIX,aeza.ru
-  - DOMAIN-SUFFIX,my.aeza.net
-  - DOMAIN-SUFFIX,pine64.com
-  - DOMAIN-SUFFIX,trustmaster.com
-
-#--------------- Торренты (Дополнения к основному списку) ---------------
-  - DOMAIN-SUFFIX,booktracker.work
-  - DOMAIN-SUFFIX,eu.org
-  - DOMAIN-SUFFIX,freetp.org
-  - DOMAIN-SUFFIX,newstudio.tv
-  - DOMAIN-SUFFIX,rutracker.ru
-  - DOMAIN-SUFFIX,rutrk.org
-  - DOMAIN-SUFFIX,stealth.si
-  - DOMAIN-SUFFIX,t-ru.org
-  - DOMAIN-SUFFIX,torrent.by
-  - DOMAIN-SUFFIX,torrindex.net
-  - DOMAIN-SUFFIX,wstracker.online
-  - DOMAIN-SUFFIX,ysagin.top
-
-#--------------- Прочее (4pda, Forex, Music) ---------------
-  - DOMAIN-SUFFIX,4pda.to
-  - DOMAIN-SUFFIX,hearthis.at
-  - DOMAIN-SUFFIX,roboforex.com
-  - DOMAIN-SUFFIX,roboforex.org
