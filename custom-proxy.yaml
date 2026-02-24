@@ -1,106 +1,80 @@
 payload:
-  # - DOMAIN-SUFFIX,2ip.ru
+#--------------- Kino.pub (IP блоки) ---------------
+# Внимание: блоки /8 и /10 очень широкие, могут захватывать лишнее
+  - IP-CIDR,5.188.94.0/24
+  - IP-CIDR,5.188.188.0/22
+  - IP-CIDR,8.0.0.0/13
+  - IP-CIDR,8.32.0.0/11
+  - IP-CIDR,13.32.0.0/12
+  - IP-CIDR,15.188.0.0/16
+  - IP-CIDR,15.236.0.0/14
+  - IP-CIDR,31.40.217.0/24
+  - IP-CIDR,31.40.218.0/24
+  - IP-CIDR,35.176.0.0/13
+  - IP-CIDR,44.192.0.0/10
+  - IP-CIDR,46.166.167.64/29
+  - IP-CIDR,51.44.0.0/16
+  - IP-CIDR,52.0.0.0/10
+  - IP-CIDR,57.0.0.0/8
+  - IP-CIDR,92.223.84.0/24
+  - IP-CIDR,95.129.233.136/29
+  - IP-CIDR,95.216.208.0/20
+  - IP-CIDR,104.16.0.0/12
+  - IP-CIDR,172.64.0.0/13
+  - IP-CIDR,188.114.96.0/22
+  - IP-CIDR,213.183.46.0/24
 
-  # ----- kino.pub (IP CIDR) -----
-  - IP-CIDR,104.16.0.0/12,PROXY
-  - IP-CIDR,13.32.0.0/12,PROXY
-  - IP-CIDR,15.188.0.0/16,PROXY
-  - IP-CIDR,15.236.0.0/14,PROXY
-  - IP-CIDR,172.64.0.0/13,PROXY
-  - IP-CIDR,188.114.96.0/22,PROXY
-  - IP-CIDR,213.183.46.0/24,PROXY
-  - IP-CIDR,31.40.217.0/24,PROXY
-  - IP-CIDR,31.40.218.0/24,PROXY
-  - IP-CIDR,35.176.0.0/13,PROXY
-  - IP-CIDR,44.192.0.0/10,PROXY
-  - IP-CIDR,46.166.167.64/29,PROXY
-  - IP-CIDR,5.188.188.0/22,PROXY
-  - IP-CIDR,5.188.94.0/24,PROXY
-  - IP-CIDR,51.44.0.0/16,PROXY
-  - IP-CIDR,52.0.0.0/10,PROXY
-  - IP-CIDR,57.0.0.0/8,PROXY
-  - IP-CIDR,8.0.0.0/13,PROXY
-  - IP-CIDR,8.32.0.0/11,PROXY
-  - IP-CIDR,92.223.84.0/24,PROXY
-  - IP-CIDR,95.129.233.136/29,PROXY
-  - IP-CIDR,95.216.208.0/20,PROXY
-  # -------- 4pda --------
-  - DOMAIN-SUFFIX,4pda.to
-  # -------- twitch --------
+#--------------- Twitch (Стриминг) ---------------
   - DOMAIN-SUFFIX,ext-twitch.tv
   - DOMAIN-SUFFIX,jtvnw.net
   - DOMAIN-SUFFIX,live-video.net
   - DOMAIN-SUFFIX,ttvnw.net
-  - DOMAIN-SUFFIX,twitch-ext.rootonline.de
   - DOMAIN-SUFFIX,twitch.tv
+  - DOMAIN-SUFFIX,twitch-ext.rootonline.de
   - DOMAIN-SUFFIX,twitchcdn.net
   - DOMAIN-SUFFIX,twitchsvc.net
   - DOMAIN-KEYWORD,ttvnw
-  - IP-CIDR,103.53.48.0/23
-  - IP-CIDR,185.42.204.0/22
-  - IP-CIDR,192.108.239.0/24
-  - IP-CIDR,192.16.64.0/21
-  - IP-CIDR,199.9.248.0/21
   - IP-CIDR,23.160.0.0/24
   - IP-CIDR,45.113.128.0/22
   - IP-CIDR,52.223.192.0/20
   - IP-CIDR,52.223.208.0/21
   - IP-CIDR,52.223.224.0/19
   - IP-CIDR,99.181.64.0/18
+  - IP-CIDR,103.53.48.0/23
+  - IP-CIDR,185.42.204.0/22
+  - IP-CIDR,192.16.64.0/21
+  - IP-CIDR,192.108.239.0/24
+  - IP-CIDR,199.9.248.0/21
   - IP-CIDR6,2402:2a80::/32
   - PROCESS-NAME,tv.twitch.android.app
-  # -------- aeza -------
-  - DOMAIN-SUFFIX,my.aeza.net
+
+#--------------- AI / ИИ (Grok & xAI) ---------------
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,x.ai
+
+#--------------- Хостинг и Технологии (Aeza, Pine64) ---------------
   - DOMAIN-SUFFIX,aeza.net
   - DOMAIN-SUFFIX,aeza.ru
-  # -------- other -------
+  - DOMAIN-SUFFIX,my.aeza.net
+  - DOMAIN-SUFFIX,pine64.com
   - DOMAIN-SUFFIX,trustmaster.com
-  # -------- torrent -------
-  - DOMAIN-SUFFIX,1337x.to
-  - DOMAIN-SUFFIX,booktracker.org
+
+#--------------- Торренты (Дополнения к основному списку) ---------------
   - DOMAIN-SUFFIX,booktracker.work
   - DOMAIN-SUFFIX,eu.org
-  - DOMAIN-SUFFIX,filmitorrent.net
   - DOMAIN-SUFFIX,freetp.org
-  - DOMAIN-SUFFIX,kinozal.me
   - DOMAIN-SUFFIX,newstudio.tv
-  - DOMAIN-SUFFIX,nnmclub.to
-  - DOMAIN-SUFFIX,nnmstatic.win
-  - DOMAIN-SUFFIX,rustorka.com
-  - DOMAIN-SUFFIX,rutor.info
-  - DOMAIN-SUFFIX,rutor.is
-  - DOMAIN-SUFFIX,rutor.org
-  - DOMAIN-SUFFIX,rutracker.cc
-  - DOMAIN-SUFFIX,rutracker.net
-  - DOMAIN-SUFFIX,rutracker.org
   - DOMAIN-SUFFIX,rutracker.ru
-  - DOMAIN-SUFFIX,rutracker.wiki
   - DOMAIN-SUFFIX,rutrk.org
   - DOMAIN-SUFFIX,stealth.si
   - DOMAIN-SUFFIX,t-ru.org
-  - DOMAIN-SUFFIX,thepiratebay.org
   - DOMAIN-SUFFIX,torrent.by
   - DOMAIN-SUFFIX,torrindex.net
   - DOMAIN-SUFFIX,wstracker.online
   - DOMAIN-SUFFIX,ysagin.top
-  # -------- forex -------
+
+#--------------- Прочее (4pda, Forex, Music) ---------------
+  - DOMAIN-SUFFIX,4pda.to
+  - DOMAIN-SUFFIX,hearthis.at
   - DOMAIN-SUFFIX,roboforex.com
   - DOMAIN-SUFFIX,roboforex.org
-  # -------- other -------
-  - DOMAIN-SUFFIX,pine64.com
-  # -------- ii -------
-  - DOMAIN-SUFFIX,grok.com
-  - DOMAIN-SUFFIX,x.ai
-  # -------- music -------
-  - DOMAIN-SUFFIX,hearthis.at
-  # -------- ii -------
-
-
-
-
-
-
-
-
-
-
